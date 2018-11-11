@@ -1,0 +1,30 @@
+{
+    "data" : {
+              "images_dir_train" : "/data/data/abhishek_data/camvid_dataset/resized_images/train/",
+              "labels_dir_train" : "/data/data/abhishek_data/camvid_dataset/resized_labels/train/",
+              "images_dir_valid" : "/data/data/abhishek_data/camvid_dataset/resized_images/valid/",
+              "labels_dir_valid" : "/data/data/abhishek_data/camvid_dataset/resized_labels/valid/"
+             }, 
+    "model" : { 
+               "data_format" : "channels_first",
+               "num_classes" : 12
+              },
+    "training" : {
+                  "learning_rate" : 0.0003,
+                  "num_epochs" : 100,
+                  "batch_size" : 2,
+                  "weight_decay" : 0.0001,
+                  "checkpoint_epoch" : 2
+                 },
+    "checkpoint" : { 
+                     "model_dir" : "model_",
+                     "model_file" : "tiramisu",
+                     "model_metrics" : "metrics.npy",
+                     "model_to_use" : 103
+                   },
+    "inference" : {
+                   "data_dir" : "/data/data/abhishek_data/camvid_dataset/resized_images/",
+                   "which_checkpoint_model" : 100,
+                   "which_set" : "valid"
+                  }
+}
