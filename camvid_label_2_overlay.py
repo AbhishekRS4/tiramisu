@@ -12,18 +12,18 @@ from scipy.misc import imread
 tf.enable_eager_execution()
 
 color_maps = np.array([[0, 0, 0], # other
-              [192, 128, 0], # bicyclist
-              [128, 0, 64], # car
-              [64, 128, 192], # person
-              [128, 64, 128], # road
-              [192, 0, 192], # two wheeler
-              [192,  0,  0], # sidewalk
-              [128, 128, 192], # sign
-              [192, 128, 64], # truck
-              [128, 64, 192], # train
-              [64,  64, 0], # traffic light
-              [64,  64, 128]], # other moving 
-              dtype = np.uint8)
+                      [0, 128, 192], # bicyclist
+                      [64, 0, 128], # car
+                      [192, 128, 64], # person
+                      [128, 64, 128], # road
+                      [192, 0, 192], # two wheeler
+                      [0, 0, 192], # sidewalk
+                      [192, 128, 128], # sign
+                      [64, 128, 192], # truck
+                      [192, 64, 128], # train
+                      [0, 64, 64], # traffic light
+                      [128, 64, 64]], # other moving 
+                      dtype = np.uint8)
 
 def overlay_generator(images_dir, labels_dir, overlays_dir, alpha = 0.75):
     images_list = os.listdir(images_dir)
