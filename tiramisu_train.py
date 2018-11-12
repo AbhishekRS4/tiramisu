@@ -14,7 +14,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 param_config_file_name = os.path.join(os.getcwd(), 'tiramisu_config.json')
 
 # define metrics
-def compute_metrics(groundtruth, prediction, axis = 1, num_classes = 15):
+def compute_metrics(groundtruth, prediction, axis = 1, num_classes = 12):
     predicted_labels = tf.argmax(tf.nn.softmax(prediction, axis = axis), axis = axis)
 
     with tf.name_scope('valid_metrics'):
