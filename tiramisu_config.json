@@ -1,9 +1,9 @@
 {
     "data" : {
-              "images_dir_train" : "/data/data/abhishek_data/camvid_dataset/resized_images/train/",
-              "labels_dir_train" : "/data/data/abhishek_data/camvid_dataset/resized_labels/train/",
-              "images_dir_valid" : "/data/data/abhishek_data/camvid_dataset/resized_images/valid/",
-              "labels_dir_valid" : "/data/data/abhishek_data/camvid_dataset/resized_labels/valid/"
+              "images_dir_train" : "/home/abhishek/camvid_dataset/resized_images/train/",
+              "labels_dir_train" : "/home/abhishek/camvid_dataset/resized_labels/train/",
+              "images_dir_valid" : "/home/abhishek/camvid_dataset/resized_images/valid/",
+              "labels_dir_valid" : "/home/abhishek/camvid_dataset/resized_labels/valid/"
              }, 
     "model" : { 
                "data_format" : "channels_first",
@@ -23,7 +23,7 @@
                      "model_to_use" : 103
                    },
     "inference" : {
-                   "data_dir" : "/data/data/abhishek_data/camvid_dataset/resized_images/",
+                   "data_dir" : "/home/abhishek/camvid_dataset/resized_images/",
                    "which_checkpoint_model" : 100,
                    "which_set" : "valid"
                   }
