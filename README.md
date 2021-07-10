@@ -11,9 +11,9 @@
 * Using dense\_net idea, concatenated convolutional layers within a dense block to build a 100 layer network for semantic segmentation
 
 ## Intructions to run
-> To run training use - **python3 tiramisu\_train.py -h**
+> To run training use - **python3 tiramisu\_train.py --help**
 >
-> To run inference use - **python3 tiramisu\_infer.py -h**
+> To run inference use - **python3 tiramisu\_infer.py --help**
 >
 > This lists all possible commandline arguments
 
@@ -24,8 +24,3 @@
 * [DenseNet](https://arxiv.org/pdf/1608.06993.pdf)
 * [The One Hundred Layers Tiramisu - Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf)
 * [Camvid Dataset](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
-
-## To do
-- [x] TiramisuNet
-- [x] Visualize results
-- [ ] Compute metrics
