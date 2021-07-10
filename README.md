@@ -13,11 +13,11 @@
 ## Intructions to run
 * Use the following to run training
 ```
-python3 tiramisu\_train.py --help
+python3 src/tiramisu_train.py --help
 ```
 * Use the following to run inference
 ```
-python3 tiramisu\_infer.py --help
+python3 src/tiramisu_infer.py --help
 ```
 
 ## Visualization of results
